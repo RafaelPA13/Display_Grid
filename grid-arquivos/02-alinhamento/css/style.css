@@ -33,6 +33,39 @@ h2 {
     min-height: 300px;
     width: 80%;
     border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 70px);
+    gap: 20px;
+
+    /* alinhamento horizontal */
+    justify-content: start;
+    justify-content: end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: center;
+
+    /* alinhamento vertical */
+    align-content: start;
+    align-content: end;
+    align-content: center;
+
+    /* alinhamento horizontal de conteúdo */
+    justify-items: stretch;
+    justify-items: start;
+    justify-items: end;
+    justify-items: center;
+
+    /* alinhamento vertical de conteúdo */
+    align-items: stretch;
+    align-items: start;
+    align-items: end;
+    align-items: center;
+}
+
+.out {
+    justify-self: end;
 }
 
 .box1 {
